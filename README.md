@@ -2,17 +2,26 @@
 2-Month Internship at Infotact 
 
 ----------1st----------------- 
+
+
+
 Problem Statement 
 Simulate a real-world vulnerability assessment for a small business IT infrastructure. Identify 
-security 
-gaps, prioritize risks, and provide mitigation strategies to improve the overall security posture. 
+security gaps, prioritize risks, and provide mitigation strategies to improve the overall security posture. 
+
+
 
 Vulnerability Assessment Report 
+
+
  
 1. Introduction 
 This report summarizes the key vulnerabilities discovered during the security assessment of the target 
 web environment. It categorizes vulnerabilities by severity and provides an overview of preventive 
 measures necessary to reduce risk exposure. 
+
+
+
  
 2. Identified Vulnerabilities and Severity 
 Vulnerability Set 1 
@@ -23,7 +32,10 @@ allow attackers to bypass WebDAV restrictions using Unicode encoding.
 • SQL Injection (blind/error-based) – Medium to High severity: Potential for database 
 compromise exists, although not conclusively confirmed. 
 • CMS PHP Code Execution – High severity: Risks of arbitrary code execution on the CMS 
-platform were detected but not successfully exploited. 
+platform were detected but not successfully exploited.
+
+
+
 Vulnerability Set 2 
 • Directory Listing / Unrestricted Directory Access – High severity: Directory contents are 
 exposed, allowing attackers to enumerate files and directories easily. 
@@ -31,6 +43,8 @@ exposed, allowing attackers to enumerate files and directories easily.
 proper restrictions, increasing the risk of database attacks. 
 • Backup and Sensitive Files Exposure – Medium to High severity: Backup files and 
 configuration files with sensitive information are present in publicly accessible locations. 
+
+
 Vulnerability Set 3 
 • Web Server TRACE Method Enabled – High severity: TRACE method can be exploited in 
 Cross-Site Tracing (XST) attacks to steal sensitive data. 
@@ -38,6 +52,8 @@ Cross-Site Tracing (XST) attacks to steal sensitive data.
 known vulnerabilities, posing significant risk. 
 • Unprotected /dav/ and /doc/ Paths – Medium severity: These directories lack adequate 
 access controls, potentially exposing sensitive data. 
+
+
 Vulnerability Set 4 
 • HTTP TRACE Enabled – High severity: Enabled TRACE method introduces risks of 
 sensitive information disclosure. 
@@ -48,8 +64,6 @@ outdated, increasing exposure to known exploits.
 • No SSL/TLS Encryption – Medium severity: Lack of encryption exposes data to 
 interception and manipulation during transmission. 
                                                                                 
- 
-INTERNSHIP PROJECT REPORT 
  
 3. Prevention Overview 
 The vulnerabilities identified highlight the need for comprehensive security hygiene, including: 
@@ -90,6 +104,8 @@ Report Sections:
 • Target applications: DVWA and OWASP Juice Shop 
 • Local testing environment. 
 • OWASP Top 10 vulnerabilities as the core focus. 
+
+
  Methodology: 
 • Manual and automated testing. 
 • Tools used: 
@@ -98,31 +114,35 @@ o sqlmap for automated SQL injection
 o Browser DevTools for source code inspection and XSS 
 o dirb/gobuster for directory brute-forcing 
 o Postman for testing API endpoints 
+
+
 Vulnerability Findings: 
 Each vulnerability included: 
 • Title 
 • Description 
 • Proof-of-Concept (PoC) with screenshots 
-                                                                                
- 
-INTERNSHIP PROJECT REPORT 
 • Impact 
 • Affected components 
 • CVSS rating 
 • Mitigation/Recommendation 
+
+
 Examples: 
 Vulnerability Description CVSS 
 Score Status 
 SQL Injection : Input fields vulnerable to unsanitized SQL queries | 9.1 (Critical)| Confirmed 
 Stored XSS: Payload stored in database and executed on load |8.8 (High)| Confirmed 
 Security Misconfig :mUnrestricted access to admin dashboard| 8.2 (High) |confirmed 
+
+
 Risk Ratings: 
 Each vulnerability was rated based on: 
 • Exploitability 
 • Impact 
 • Likelihood 
 • Business risk 
- Recommendations: 
+
+Recommendations: 
 Clear, actionable mitigation steps for each issue: 
 • Use input validation & output encoding 
 • Implement proper session management 
